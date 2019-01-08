@@ -1,0 +1,28 @@
+@import "colours";
+
+@import "bootstrap-variables";
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "bootstrap-tweaks";
+
+
+.strip-spaces {
+  font-size: 0;
+}
+
+.intermediate {
+  font-size: .875rem;
+  line-height: 1.25rem
+}
+
+b, strong {
+  font-weight: $font-weight-bold;
+}
+
+
+.navbar-brand {
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
