@@ -1,8 +1,42 @@
-$dark-navy: #0A2C58;
-$pink: #C94962;
-$pink-dark: #A34155;
-$pink-light: #F26179;
-$coral: #FFDDD6;
-$black: #192C45;
-$gray: #5C7697;
-$gray-light: #B9C9DE;
+$rich-black: #002;
+$oxford-blue: #002E42;
+$midnight-green: #004A5D;
+$silk: #FFEBD3;
+$ochre: #D67C0E;
+$saffron: #FF9C24;
+$carmine: #B5442D;
+$platinum: #D7E2E8;
+$ocean: #0A74B2;
+$sky: #68D0EB;
+$white: #fff;
+
+
+// Projects
+
+@mixin vow-bg {
+  background-color: #007;
+}
+
+@mixin drmartens-bg {
+  background-color: #000;
+}
+
+@mixin chroma-bg {
+  background-image: linear-gradient(270deg, #7249BA 0%, #AD419F 33.3333333%, #D12665 66.666666%, #DE5452 100%);
+}
+
+@mixin crosstabs-bg {
+  background-color: #25334D;
+}
+
+@mixin pollpass-bg {
+  background-image: linear-gradient(143deg, #FE8B4B 0%, #FE6C4D 31%, #FE664D 100%);
+}
+
+@mixin scoota-bg {
+  background-color: #13151C;
+}
+
+@mixin cnc-bg {
+  background-color: #0D091F;
+}

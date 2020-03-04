@@ -5,6 +5,9 @@
   "homepage": "https://damir.grandich.co.uk/",
   "license": "UNLICENSED",
   "private": true,
+  "browserslist": [
+    "last 1 version"
+  ],
   "author": {
     "name": "Damir Grandich",
     "email": "dgrandich@gmail.com"
@@ -14,15 +17,15 @@
     "url": "https://github.com/leetskills/damirgrandich-portfolio.git"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-pro": "^5.6.3",
-    "autoprefixer": "^9.4.3",
+    "@fortawesome/fontawesome-pro": "^5.12.1",
+    "autoprefixer": "^9.7.4",
     "babel-preset-es2015": "^6.9.0",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "concurrent-transform": "^1.0.0",
     "del": "^3.0.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-awspublish": "^3.3.3",
-    "gulp-cache": "^1.0.2",
+    "gulp-cache": "^1.1.3",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.3",
     "gulp-gzip": "^1.4.2",
@@ -36,8 +39,8 @@
     "gulp-rev": "^9.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
     "har-validator": "^5.1.3",
     "require-dir": "^1.2.0",
     "shelljs": "^0.8.3",
@@ -45,8 +48,8 @@
   },
   "dependencies": {
     "autosize": "^4.0.2",
-    "bootstrap": "^4.2.1",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.6"
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
   }
 }

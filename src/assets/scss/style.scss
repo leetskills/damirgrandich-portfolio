@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600,700&display=swap');
+
 @import "colours";
 
 @import "bootstrap-variables";
-
 @import "node_modules/bootstrap/scss/bootstrap.scss";
-
 @import "bootstrap-tweaks";
 
+@import "components";
+@import "navbar";
+@import "type";
+@import "home";
+@import "work";
 
 .strip-spaces {
   font-size: 0;
@@ -18,11 +23,4 @@
 
 b, strong {
   font-weight: $font-weight-bold;
-}
-
-
-.navbar-brand {
-  font-weight: 400;
-  letter-spacing: 4px;
-  text-transform: uppercase;
 }

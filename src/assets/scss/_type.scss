@@ -1,0 +1,69 @@
+$font-features: "ss02";
+
+body {
+  font-feature-settings: $font-features;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  letter-spacing: -.03125em;
+}
+
+h1, .h1 {
+  line-height: 3rem;
+}
+
+h2, .h2 {
+  line-height: 2.5rem;
+}
+
+h3, .h3 {
+  line-height: 2.5rem;
+}
+
+h4, .h4 {
+  line-height: 2rem;
+}
+
+h5, .h5 {
+  line-height: 1.75rem;
+}
+
+h6, .h6 {
+  line-height: 1.5rem;
+}
+
+blockquote {
+  color: $carmine;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  p:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+}
+
+.lead {
+  color: $ochre;
+}
+
+@mixin dg-caps-label($color: $carmine, $size: .875rem, $line-height: 1.5rem) {
+  color: $color;
+  font-size: $size;
+  font-weight: 600;
+  letter-spacing: 0.077em;
+  line-height: $line-height;
+  text-transform: uppercase;
+}
+
+.dg-caps-label {
+  @include dg-caps-label();
+}

@@ -5,11 +5,15 @@
 
   <body class="{{ page.bodyClass }}">
 
-  {{ content }}
+    {%- include navbar.html -%}
 
-  <!-- JS -->
-  <!-- inject:js -->
-  <!-- endinject -->
+    {{ content }}
+
+    {%- include footer.html -%}
+
+    <!-- JS -->
+    <!-- inject:js -->
+    <!-- endinject -->
 
   </body>
 

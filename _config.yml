@@ -1,7 +1,7 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
 title: Damir Grandich Portfolio
-description: Work examples and profile of Damir Grandich, a Product UX Designer in London. 
+description: Work examples and profile of Damir Grandich, a Product UX Designer in London.
 url: https://damir.grandich.co.uk/
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
@@ -34,7 +34,7 @@ permalink: pretty
 excerpt_separator: ''
 
 # Markdown library and options
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']

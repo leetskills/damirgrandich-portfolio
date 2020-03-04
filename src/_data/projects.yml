@@ -1,0 +1,55 @@
+- name: SmartPOS
+  id: cnc
+  description: Buying Digital OOH simply
+  image: cnc-logo.svg
+  tags:
+  - Prototype
+  - Design
+
+- name: Vow Made
+  id: vow
+  description: Startup in-housing advertising
+  image: vow-logo.svg
+  tags:
+  - Prototype
+  - Branding
+
+- name: Dr. Martens
+  id: drmartens
+  description: Research study on drmartens.com
+  image: drmartens-logo.svg
+  tags:
+  - Research
+  - Testing
+
+- name: Chroma
+  id: chroma
+  description: Design System &amp; UI kit
+  image: chroma-logo.svg
+  tags:
+  - Design System
+  - Accessibility
+
+- name: Pollpass
+  id: pollpass
+  description: Chatbot for market research
+  image: pollpass-logo.svg
+  tags:
+  - Prototype
+  - Interaction Design
+
+- name: Crosstabs
+  id: crosstabs
+  description: Powerful data analysis tool
+  image: gwi-logo.svg
+  tags:
+  - Research
+  - Interaction Design
+
+# - name: Scoota
+#   id: scoota
+#   description: Ad creation &amp; delivery platform
+#   image: scoota-logo.svg
+#   tags:
+#   - Prototype
+#   - Design System

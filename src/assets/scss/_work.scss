@@ -1,0 +1,132 @@
+.dg-work-header {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 24rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+  }
+}
+
+.dg-work-section {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.dg-work-background {
+  background-color: $white;
+}
+
+.dg-work-image {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.dg-work-phone-image {
+  padding: 7rem 0 0;
+  text-align: center;
+
+  img {
+    max-width: 50rem;
+  }
+}
+
+
+
+.dg-work-challenge {
+  background-color: $oxford-blue;
+  color: $white;
+
+  h2 {
+    color: $platinum;
+  }
+
+  .dg-caps-label {
+    color: $saffron;
+  }
+}
+
+.dg-work-outcome {
+  background-color: $silk;
+}
+
+// Vow
+
+.dg-work-vow-bg {
+  @include vow-bg;
+  background-image: url('../images/work/vow/smoke.jpg');
+
+  img {
+    height: 5rem;
+  }
+}
+
+.dg-work-vow-mountains {
+  background-image: url('../images/work/vow/mountains.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+}
+
+.dg-work-vow-screenshot {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+
+// Pollpass
+
+.dg-work-pollpass-bg {
+  @include pollpass-bg;
+
+  img {
+    height: 6rem;
+    padding-top: 1rem;
+    max-width: none;
+  }
+}
+
+.dg-work-pollpass-screenshot {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+
+// Chroma
+
+.dg-work-chroma-bg {
+  @include chroma-bg;
+
+  img {
+    height: 3rem;
+  }
+}
+
+.dg-work-chroma-screenshot {
+  // background-color: #EDF2FA;
+  // background-color: $platinum;
+  background-color: #fff;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  img {
+    // border-radius: $border-radius-lg;
+    // @include shadow-xl();
+  }
+}
+
+.dg-work-chroma-accessibility {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}

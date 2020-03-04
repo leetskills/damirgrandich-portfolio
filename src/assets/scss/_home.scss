@@ -1,0 +1,236 @@
+@keyframes animateGradient {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+@keyframes animateGraphic {
+  0% { background-position: 10% 0 }
+  50% { background-position: 0 0 }
+  100% { background-position: 10% 0 }
+}
+
+@keyframes animateSize {
+  0% { background-size: 1920px; }
+  50% { background-size: 1920px; }
+  100% { background-size: 1920px; }
+}
+
+@keyframes rotateClockwise {
+  0% { transform: rotate(0deg) scale(1) }
+  50% { transform: rotate(180deg) scale(.5) }
+  100% { transform: rotate(360deg) scale(1) }
+}
+
+@keyframes rotateAnticlockwise {
+  0% { transform: rotate(0deg) scale(1) }
+  50% { transform: rotate(-180deg) scale(2) }
+  100% { transform: rotate(360deg) scale(1) }
+}
+
+.dg-header {
+  background-color: $midnight-green;
+  color: $platinum;
+  overflow: hidden;
+  position: relative;
+
+  .dg-header-gradient {
+    animation: animateGradient 25s ease 8;
+    background: linear-gradient(270deg, rgba(#432500, .4), rgba(#003342, .3), rgba(#2C0524, .2));
+    // background: linear-gradient(270deg, rgba(#2C0524, .8), rgba(#003342, .6), rgba(#432500, .4));
+    background-size: 300% 300%;
+    display: flex;
+    align-items: center;
+    height: 32rem;
+    z-index: 40;
+    position: relative;
+  }
+
+  svg#header-graphic-enneagon {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 30%;
+    transform: translate3d(-30%, 0, 0);
+    right: auto;
+    height: 32rem;
+  }
+
+  .animategroup {
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    transform-origin: 30% 70%;
+  }
+
+  // #group1 { animation-duration: 700s; animation-name: rotateClockwise; }
+  // #group2 { animation-duration: 600s; animation-name: rotateAnticlockwise; }
+  // #group3 { animation-duration: 500s; animation-name: rotateClockwise; }
+  // #group4 { animation-duration: 400s; animation-name: rotateAnticlockwise; }
+  #group5 { animation-duration: 400s; animation-name: rotateClockwise; }
+  #group6 { animation-duration: 500s; animation-name: rotateAnticlockwise; }
+  #group7 { animation-duration: 500s; animation-name: rotateClockwise; }
+  #group8 { animation-duration: 400s; animation-name: rotateAnticlockwise; }
+  // #group9 { animation-duration: 700s; animation-name: rotateClockwise; }
+  // #group10 { animation-duration: 800s; animation-name: rotateAnticlockwise; }
+
+  .dg-header-tagline {
+    margin-bottom: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    background-image: url('../images/header/header-graphic-enneagon.svg');
+    background-position: 30% top;
+    background-size: cover;
+
+    svg#header-graphic-enneagon {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .dg-header-inner {
+      text-align: center;
+
+      .dg-header-tagline {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    .dg-header-logo {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    svg#header-graphic-enneagon {
+      left: -36rem;
+      transform: none;
+    }
+
+    .dg-header-tagline {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.dg-description {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+
+  @include media-breakpoint-down(xs) {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  h2 strong {
+    background-image: linear-gradient(180deg, transparent 0%, transparent 60%, $silk 60%, $silk 100%);
+  }
+}
+
+// Projects list
+
+.dg-projects {
+  padding-bottom: 6rem;
+}
+
+.dg-projects-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  @include make-row();
+
+  .dg-projects-list-item {
+    @include make-col-ready();
+    @include make-col(12);
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+  }
+
+  .dg-project-link {
+    display: block;
+    margin-bottom: 4rem;
+    text-decoration: none;
+    color: $rich-black;
+
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+
+      .dg-project-name {
+        text-decoration: underline;
+      }
+    }
+
+    .dg-project-thumb {
+      background-color: $midnight-green;
+      display: flex;
+      align-items: center;
+      height: 12rem;
+
+      img {
+        display: block;
+        max-height: 90%;
+        max-width: 80%;
+        margin: auto;
+      }
+
+      &.dg-project-vow {
+        @include vow-bg;
+      }
+
+      &.dg-project-drmartens {
+        @include drmartens-bg;
+      }
+
+      &.dg-project-chroma {
+        @include chroma-bg;
+      }
+
+      &.dg-project-crosstabs {
+        @include crosstabs-bg;
+      }
+
+      &.dg-project-pollpass {
+        @include pollpass-bg;
+      }
+
+      &.dg-project-scoota {
+        @include scoota-bg;
+      }
+
+      &.dg-project-cnc {
+        @include cnc-bg;
+      }
+    }
+
+    .dg-project-name {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -.03125em;
+      line-height: 2.5rem;
+      margin-top: 1rem;
+    }
+
+    .dg-project-description {
+      color: $midnight-green;
+      display: block;
+      font-size: .875rem;
+      line-height: 1.5rem;
+      margin-top: .5rem;
+    }
+
+    .dg-project-tags {
+      margin-top: 1rem;
+    }
+  }
+}

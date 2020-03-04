@@ -1,0 +1,154 @@
+// Tags
+
+.dg-tag {
+  background-color: $silk;
+  border-radius: $border-radius-sm;
+  color: $carmine;
+  display: inline-block;
+  font-size: $font-size-sm;
+  line-height: 1rem;
+  padding: .25rem .25rem;
+}
+
+.dg-tags-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  .dg-tags-list-item {
+    display: inline-block;
+    vertical-align: top;
+
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+
+  .dg-tag {
+    vertical-align: top;
+
+    .dg-pill {
+      margin-top: -.0625rem;
+      margin-bottom: -.0625rem;
+      margin-left: .25rem;
+    }
+  }
+}
+
+
+// Footer
+
+.dg-footer {
+  background-color: $midnight-green;
+  color: $white;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+    padding-top: 3rem;
+
+    .dg-footer-image {
+      margin-bottom: 1rem;
+
+      img {
+        width: 8rem;
+      }
+    }
+  }
+
+  a {
+    color: $sky;
+
+    &:hover,
+    &:focus {
+      color: darken($sky, 15%);
+    }
+  }
+
+  .dg-footer-links {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+
+      a {
+        color: $white;
+        display: block;
+        font-size: 2rem;
+        line-height: 1.0;
+
+        &:hover,
+        &:focus {
+          color: darken($sky, 15%);
+        }
+      }
+    }
+  }
+
+  .dg-copyright {
+    margin-top: 2.5rem;
+  }
+}
+
+
+// Shadows
+
+@mixin shadow($color: #07f) {
+  box-shadow: 0 .0625rem .25rem 0 rgba($color, .2),
+              0 .25rem 1rem 0 rgba($color, .1);
+}
+
+@mixin shadow-xl($color: #07f) {
+  box-shadow:
+    0 1px 1px rgba($color, 0.05),
+    0 2px 3px rgba($color, 0.05),
+    0 8px 8px rgba($color, 0.05),
+    0 16px 16px rgba($color, 0.05),
+    0 48px 48px rgba($color, 0.1)
+  ;
+}
+
+// @mixin shadow-xl($color: #07f) {
+//   box-shadow: 0 .0625rem .25rem 0 rgba($color, .3),
+//               0 .375rem 4rem 0 rgba($color, .2);
+// }
+
+.dg-shadow {
+  @include shadow;
+}
+
+.dg-shadow-xl {
+  @include shadow-xl;
+}
+
+
+// Frames
+
+.dg-frame-browser {
+  background-color: #fff;
+  background-image: url('../images/frame-buttons.svg');
+  background-repeat: no-repeat;
+  background-position: .5rem .5rem;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  padding-top: 1.75rem;
+  @include shadow-xl();
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
