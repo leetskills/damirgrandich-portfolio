@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: Damir Grandich Portfolio
 description: Work examples and profile of Damir Grandich, a Product UX Designer in London.
-url: https://damir.grandich.co.uk/
+url: https://damir.grandich.co.uk
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/src
