@@ -1,31 +1,40 @@
-- name: SmartPOS
-  id: cnc
-  description: Buying Digital OOH simply
-  image: cnc-logo.svg
+- name: Store Boost
+  id: storeboost
+  description: Boosting store footfall with DOOH
+  image: storeboost-logo.svg
+  client: The Cloud and Compass
+  date: Feb - Mar 2020
   tags:
+  - UX/UI
   - Prototype
-  - Design
+  - Logo Design
 
-- name: Vow Made
+- name: Vow
   id: vow
   description: Startup in-housing advertising
   image: vow-logo.svg
+  client: Vow Made
+  date: May - Oct 2019
   tags:
+  - UX/UI
   - Prototype
   - Branding
 
-- name: Dr. Martens
-  id: drmartens
-  description: Research study on drmartens.com
-  image: drmartens-logo.svg
-  tags:
-  - Research
-  - Testing
+# - name: Dr. Martens
+#   id: drmartens
+#   published: false
+#   description: Research study on drmartens.com
+#   image: drmartens-logo.svg
+#   tags:
+#   - Research
+#   - Testing
 
 - name: Chroma
   id: chroma
   description: Design System &amp; UI kit
   image: chroma-logo.svg
+  client: GlobalWebIndex
+  date: Jun 2018 - Jan 2019
   tags:
   - Design System
   - Accessibility
@@ -34,17 +43,20 @@
   id: pollpass
   description: Chatbot for market research
   image: pollpass-logo.svg
+  client: GlobalWebIndex
+  date: Oct - Dec 2017
   tags:
+  - UX/UI
   - Prototype
-  - Interaction Design
 
-- name: Crosstabs
-  id: crosstabs
-  description: Powerful data analysis tool
-  image: gwi-logo.svg
-  tags:
-  - Research
-  - Interaction Design
+# - name: Crosstabs
+#   id: crosstabs
+#   published: false
+#   description: Powerful data analysis tool
+#   image: gwi-logo.svg
+#   tags:
+#   - Research
+#   - Interaction Design
 
 # - name: Scoota
 #   id: scoota

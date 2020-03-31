@@ -1,0 +1,28 @@
+<ul class="dg-projects-list">
+{%- for project in site.data.projects -%}
+{% assign delay = forloop.index | append: '00' %}
+  <li class="dg-projects-list-item" data-aos="fade-up" data-aos-delay="{{ delay }}">
+    <a {% unless project.published == false %}href="/work/{{ project.id }}/"{% endunless %} class="dg-project-link">
+      <span class="dg-project-thumb dg-project-{{ project.id }}">
+        <img src="/assets/images/logos/{{ project.image }}" alt="{{ project.name }} thumbnail">
+      </span>
+
+      <span class="dg-project-name">
+        {{ project.name }}
+      </span>
+
+      <span class="dg-project-description">
+        {{ project.description }}
+      </span>
+
+      <ul class="dg-project-tags dg-tags-list">
+        {%- for tag in project.tags -%}
+          <li class="dg-tags-list-item">
+            <span class="dg-tag">{{ tag }}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </a>
+  </li>
+{%- endfor -%}
+</ul>

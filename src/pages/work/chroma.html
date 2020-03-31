@@ -5,6 +5,8 @@ permalink: /work/chroma/
 bodyClass: project
 ---
 
+{% assign project = site.data.projects[2] %}
+
 <div class="dg-work-header dg-work-chroma-bg">
   <div class="container">
     <img
@@ -14,142 +16,148 @@ bodyClass: project
   </div>
 </div>
 
-<div class="dg-work-section dg-work-background">
+<div class="dg-work-section dg-work-background py-5 py-md-7">
   <div class="container">
-    <h3 class="dg-caps-label">
-      Project
-    </h3>
+    {%- include project-infobox.html -%}
 
-    <h1>
-      Chroma Design System
-    </h1>
+    <div class="row" data-aos="fade-up" data-aos-delay="400">
+      <div class="col-12 col-md-10 offset-md-1">
+        <h3 class="dg-caps-label">
+          Background
+        </h3>
 
-    <p class="lead">
-      Comprehensive web and Sketch based design system that puts accessibility at the forefront
-    </p>
+        <h1>
+          Comprehensive design system with accessibility at the forefront
+        </h1>
 
-    <p>
-      GlobalWebIndex undertook a total rebranding exercise in 2018 that affected all of their multi-channel outputs. The older style was beginning to show its age, and over time it became riddled with inconsistencies from years of updates by various designers and developers.
-    </p>
+        <p class="lead">
+          The Chroma Design System was built to support a total rebrand GlobalWebIndex undertook for all of their multi-channel outputs
+        </p>
 
-    <p>
-      Among the problems with the legacy design language was how little attention was paid to web accessibility. In an age of increasing inclusivity in all walks of life, this stuck out like an embarrassing anachronism.
-    </p>
+        <p>
+          The older style was showing its age, and was riddled with inconsistencies from years of updates by various designers and developers.
+        </p>
 
-    <blockquote>
-      <p>
-        Accessibility as a fundamental user right, not an afterthought
-      </p>
-    </blockquote>
+        <blockquote>
+          <p>
+            Seemingly no attention was paid to accessibility. In an age of inclusivity, this stuck out like an embarrassing anachronism.
+          </p>
+        </blockquote>
 
-    <p>
-      Of course, designing to meet accessibility standards is just one part of the equation. Those standards have to be enforced throughout the product development lifecycle. The design, marketing, engineering and product teams all need a single source of truth.
-    </p>
-
-    <p>
-      Chroma was built to solve those needs, being a one stop place for all resources relating to the design language that anyone can use as a starting point to get them what they need.
-    </p>
-  </div>
-</div>
-
-<div class="dg-work-image dg-work-chroma-screenshot pt-0">
-  <div class="container">
-    <div class="dg-frame-browser">
-      <img
-        src="/assets/images/work/chroma/chroma-home-screenshot.png"
-        alt="Screenshot of the Chroma homepage">
+        <p>
+          Of course, creating a new design language is just one part of the equation. It must be supported and enforced throughout the product development lifecycle.
+        </p>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="dg-work-section dg-work-challenge">
+<div class="dg-work-image dg-work-chroma-screenshot py-6 py-md-8">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-md-5">
-        <img
-          srcset="/assets/images/work/chroma/chroma-colourblindness.png 1x,
-                  /assets/images/work/chroma/chroma-colourblindness@2x.png 2x"
-          src="/assets/images/work/chroma/chroma-colourblindness@2x.png"
-          alt="Colour blindness tests for Chroma"
-          class="img-fluid w-100 rounded-lg">
-      </div>
+    <img
+      src="/assets/images/work/chroma/chroma-home-screenshot.png"
+      alt="Screenshot of the Chroma homepage"
+      class="img-fluid w-100 rounded-lg dg-shadow-xl"
+      data-aos="fade-up">
+  </div>
+</div>
 
-      <div class="col-sm-6 col-md-7">
+<div class="dg-work-section dg-work-challenge py-5 py-md-7">
+  <div class="container">
+    <div class="row" data-aos="fade-up">
+      <div class="col-12 col-md-10 offset-md-1">
         <h3 class="dg-caps-label">
-          Key Challenge
+          Challenge
         </h3>
 
         <h2>
-          Driven by three design principles
+          Inclusivity, Empowerment, and Clarity
         </h2>
 
-        <p>
-          It started with three core design principles that I believe to be universally vital: Inclusivity, Clarity, and Empowerment.
+        <p class="lead">
+          Chroma treats these core design principles as fundamental user rights
         </p>
 
-        <p>
-          From the outset, this redesign was focused on delivering full adherence to <abbr>WCAG 2.1</abbr>. I believe that every UI should be made as inclusive as it can possibly be.
-        </p>
+        <div class="row">
+          <div class="col-sm-6 col-md-5">
+            <p>
+              <img
+                srcset="/assets/images/work/chroma/chroma-colourblindness.png 1x,
+                        /assets/images/work/chroma/chroma-colourblindness@2x.png 2x"
+                src="/assets/images/work/chroma/chroma-colourblindness@2x.png"
+                alt="Colour blindness tests for Chroma"
+                class="img-fluid w-100 rounded">
+            </p>
+          </div>
 
-        <p>
-          Careful consideration was given to colours. The GWI platform makes heavy use of complex data visualisations. Every colour combination was carefully chosen and tested against various forms of colour deficiency.
-        </p>
+          <div class="col-sm-6 col-md-7">
+            <p>
+              From the outset, the design language treated accessibility as a first-class citizen. We committed to full adherence to the <abbr title="Web Content Accessibility Guidelines, version 2.1">WCAG 2.1</abbr> standard.
+            </p>
 
-        <p>
-          Many of the outputs of GWI data are dense and need to be as readable as possible. Many styles were tested to maximise legibility of these large data sets. Contrast ratios and visual hierarchies were carefully considered to ensure the most clarity.
-        </p>
+            <p>
+              Careful consideration was given to colours. The GWI platform makes heavy use of complex data visualisations. Every colour combination was carefully chosen and tested against various forms of colour deficiency.
+            </p>
+
+            <p>
+              Many styles were tested to maximise legibility of large data sets that research professionals tend to work within. Contrast ratios and visual hierarchies were carefully considered to maximise usability and clarity.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="dg-work-image dg-work-chroma-accessibility">
+<div class="dg-work-image dg-work-chroma-accessibility py-5 py-md-7">
   <div class="container">
     <img
       srcset="/assets/images/work/chroma/chroma-accessibility-screenshot.png 1x,
               /assets/images/work/chroma/chroma-accessibility-screenshot@2x.png 2x"
       src="/assets/images/work/chroma/chroma-accessibility-screenshot@2x.png"
       alt="Screenshot of the Chroma colours"
-      class="img-fluid w-100">
+      class="img-fluid"
+      data-aos="fade-up">
   </div>
 </div>
 
-<div class="dg-work-section dg-work-outcome">
+<div class="dg-work-section dg-work-outcome py-5 py-md-7">
   <div class="container">
-    <h3 class="dg-caps-label">
-      Outcomes
-    </h3>
+    <div class="row" data-aos="fade-up">
+      <div class="col-12 col-md-10 offset-md-1">
+        <h3 class="dg-caps-label">
+          Takeaways
+        </h3>
 
-    <h2>
-      Delivering a multi-faceted design system
-    </h2>
+        <h2>
+          A multi-faceted design system for everyone
+        </h2>
 
-    <p>
-      As a design system, Chroma had a number of different users, each with different requirements. The solution was multi-faceted, comprising of a web portal and a shared Sketch library.
-    </p>
+        <p class="lead">
+          Chroma had a number of different users, each with different requirements.
+        </p>
 
-    <p>
-      For product designers in the team, Chroma is comprised of a comprehensive UI kit built in Sketch, utilising the latest best-practices for how symbols and shared styles are set up allowing designers to focus on the design.
-    </p>
+        <p>
+          A shared Sketch library utilising best-practice symbols and shared styles allowed the Product Designers in the team to work efficiently and consistently, while providing a solid foundation to be creative.
+        </p>
 
-    <p>
-      The engineers&mdash;all of whom work remotely&mdash;need definitive documentation of the core components that they frequently use. Every colour variable in one place, with no button state was left chance.
-    </p>
+        <p>
+          <img
+            srcset="/assets/images/work/chroma/chroma-buttons-screenshot.png 1x,
+                    /assets/images/work/chroma/chroma-buttons-screenshot@2x.png 2x"
+            src="/assets/images/work/chroma/chroma-buttons-screenshot@2x.png"
+            alt="Screenshot of the Chroma colours"
+            class="img-fluid w-100 rounded">
+        </p>
 
-    <p>
-      The marketing and information design teams needed a single source of truth for the latest complete branding guidelines. Everyone in the company would know where to go to download the corporate typeface or find various templates.
-    </p>
-  </div>
-</div>
+        <p>
+          A web portal served everyone else. The engineers now had a single source of truth for the core styles and components. Every colour variable in one place, with no button state left to chance.
+        </p>
 
-<div class="dg-work-image dg-work-chroma-screenshot">
-  <div class="container">
-    <div class="dg-frame-browser">
-      <img
-        srcset="/assets/images/work/chroma/chroma-buttons-screenshot.png 1x,
-                /assets/images/work/chroma/chroma-buttons-screenshot@2x.png 2x"
-        src="/assets/images/work/chroma/chroma-buttons-screenshot@2x.png"
-        alt="Screenshot of the Chroma colours">
+        <p>
+          For the wider business, there was now a single place where everyone could go to find brand guidelines, typefaces, on-brand presentation templates, not to mention the <i class="dg-aside" title="I was gobsmacked by the several dozen incorrect versions of the company logo I found knocking about 🙈">proper company logo</i>!
+        </p>
+      </div>
     </div>
   </div>
 </div>

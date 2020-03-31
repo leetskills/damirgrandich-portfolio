@@ -1,0 +1,56 @@
+.dg-about-header {
+  background-color: $ochre;
+  color: $silk;
+  display: flex;
+  align-items: center;
+  height: 32rem;
+
+  @include media-breakpoint-down(xs) {
+    h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.dg-about-section {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+// .dg-about-design {
+//   background-color: $ochre;
+// }
+
+.dg-about-interests {
+  background-color: $silk;
+}
+
+.dg-about-photos {
+  height: 50rem;
+  background-image: url('../images/other/food-shots.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media-breakpoint-down(md) {
+    height: 32rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 20rem;
+  }
+
+
+  // overflow: hidden;
+  // text-align: center;
+  //
+  // img {
+  //   min-width: 1280px;
+  //   margin: 0 auto;
+  //
+  //   @include media-breakpoint-down(sm) {
+  //     min-width: 640px;
+  //   }
+  // }
+}

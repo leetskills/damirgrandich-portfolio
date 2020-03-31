@@ -5,6 +5,8 @@ permalink: /work/pollpass/
 bodyClass: project
 ---
 
+{% assign project = site.data.projects[3] %}
+
 <div class="dg-work-header dg-work-pollpass-bg">
   <div class="container">
     <img
@@ -14,33 +16,39 @@ bodyClass: project
   </div>
 </div>
 
-<div class="dg-work-section dg-work-background">
+<div class="dg-work-section dg-work-background py-5 py-md-7">
   <div class="container">
-    <h3 class="dg-caps-label">
-      Project
-    </h3>
+    {%- include project-infobox.html -%}
 
-    <h1>
-      Pollpass Chat Bot
-    </h1>
+    <div class="row" data-aos="fade-up" data-aos-delay="400">
+      <div class="col-12 col-md-10 offset-md-1">
+        <h3 class="dg-caps-label">
+          Project
+        </h3>
 
-    <p class="lead">
-      Disrupting the well-established market research industry with an innovative and exciting new way to get peoples’ opinions en-masse.
-    </p>
+        <h1>
+          Pollpass Chat Bot
+        </h1>
 
-    <p>
-      Pollpass was built from the ground up to be a transparent, GDPR-compliant way of collecting research data directly from a broad variety of digital consumers. With the increasing difficulty in passive data collection such as cookie-tracking, active data methods such as surveys have become vitally important. However, traditional surveys have their own issues.
-    </p>
+        <p class="lead">
+          Built from the ground up to be a transparent and GDPR-compliant way of collecting research data directly from a variety of digital consumers.
+        </p>
 
-    <blockquote>
-      <p>
-        It has historically been difficult to attract a statistically representative set of users to spend, say, 30 minutes to complete a market research survey.
-      </p>
-    </blockquote>
+        <p>
+          With the increasing difficulty in passive tracking-based data collection, active collection methods such as surveys have become vitally important.
+        </p>
 
-    <p>
-      Traditional users of market research surveys skew heavily toward full-time parents and students. With Pollpass, we wanted to get a more representative set of users by appealing with best-in-class ease of use and delight.
-    </p>
+        <blockquote>
+          <p>
+            It has historically been difficult to attract a representative set of users to spend 30 minutes completing a market research survey.
+          </p>
+        </blockquote>
+
+        <p>
+          Traditional users of market research surveys skew heavily toward students and full-time parents. With Pollpass, we targeted a wider demographic by appealing with personality and delight.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -50,30 +58,35 @@ bodyClass: project
             /assets/images/work/pollpass/pollpass-phone@2x.jpg 2x"
     src="/assets/images/work/pollpass/pollpass-phone@2x.jpg"
     alt="Example of a person using Pollpass on a phone"
-    class="img-fluid w-100">
+    class="img-fluid w-100"
+    data-aos="fade-up">
 </div>
 
-<div class="dg-work-section dg-work-challenge">
+<div class="dg-work-section dg-work-challenge py-5 py-md-7">
   <div class="container">
-    <h3 class="dg-caps-label">
-      Key Challenge
-    </h3>
+    <div class="row" data-aos="fade-up">
+      <div class="col-12 col-md-10 offset-md-1">
+        <h3 class="dg-caps-label">
+          Challenge
+        </h3>
 
-    <h2>
-      The chat had to feel engaging for any duration
-    </h2>
+        <h2>
+          The chat had to feel engaging for any duration
+        </h2>
 
-    <p>
-      From the outset my intent was to keep the UI elements to an absolute minimum. Users would be completing lengthy surveys with numerous questions, some of which can be wordy and repetitive. Any superflous UI elements would add to the cognitive load and could lead to fatigue.
-    </p>
+        <p class="lead">
+          Minimising cognitive load was a key objective in order to keep things interesting and reduce fatigue.
+        </p>
 
-    <p>
-      In order to make the experience feel like a real chat, I created a finely-tuned prototype built in HTML, CSS & Javascript. As mobile was the primary target, everything had to feel right from touch.
-    </p>
+        <p>
+          As users would be completing lengthy surveys with numerous questions&mdash;some of which can be wordy and repetitive&mdash;UI elements were kept to an absolute minimum.
+        </p>
 
-    <p>
-      Building the prototype in the same language of the developed app eliminated guesswork. I could find out exactly how it would behave, warts and all, on all the numerous browsers and devices we would support. Of course, it also made handover to the engineers as simple as copy and paste.
-    </p>
+        <p>
+          A design mockup doesn't tell you anything about how an app would feel after using it for an extended period of time, so I built a prototype that could.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -84,49 +97,55 @@ bodyClass: project
               /assets/images/work/pollpass/pollpass-screenshot@2x.png 2x"
       src="/assets/images/work/pollpass/pollpass-screenshot@2x.png"
       alt="Screenshot of the Pollpass UI"
-      class="img-fluid w-100">
+      class="img-fluid w-100"
+      data-aos="fade-up">
   </div>
 </div>
 
-<div class="dg-work-section dg-work-outcome">
-  <div class="container">
+<div class="dg-work-section dg-work-outcome py-5 py-md-7">
+  <div class="container" data-aos="fade-up">
     <h3 class="dg-caps-label">
       Outcomes
     </h3>
 
     <h2>
-      Learnings from the prototype were eye-opening
+      A prototype allowed me to simulate a real chat
     </h2>
+
+    <p class="lead">
+      With a data-driven HTML/CSS/JS prototype I was able to test all manner of survey questions, from the short and snappy to the wordy and repetitive.
+    </p>
 
     <div class="row">
       <div class="col-sm-6 col-md-5">
-        <img
-          srcset="/assets/images/work/pollpass/pollpass-code.png 1x,
-                  /assets/images/work/pollpass/pollpass-code@2x.png 2x"
-          src="/assets/images/work/pollpass/pollpass-code@2x.png"
-          alt="Screenshot of the prototype code for Pollpass"
-          class="img-fluid w-100">
+        <p>
+          <img
+            srcset="/assets/images/work/pollpass/pollpass-code.png 1x,
+                    /assets/images/work/pollpass/pollpass-code@2x.png 2x"
+            src="/assets/images/work/pollpass/pollpass-code@2x.png"
+            alt="Screenshot of the prototype code for Pollpass"
+            class="img-fluid w-100 rounded">
+        </p>
       </div>
 
       <div class="col-sm-6 col-md-7">
-        <p>
-          I was able to test all of the various types of questions that would represent a real market research survey, from short snappy questions with just a few choices to longer questions with a long list of items to choose from.
-        </p>
 
         <p>
-          It also allowed me to see how it felt to spend an extended amount of time answering questions: to see how fatigue might set in, and where to inject some variety as required.
+          I could see how it felt to spend an extended amount of time answering questions: to see where fatigue might set in, and where to inject some variety as required.
         </p>
 
         <blockquote>
-          Ideas that looked fine in a Sketch file were discovered to be suboptimal when put to the paces in someone’s hands.
+          <p>
+            Ideas that looked fine in a mockup were found out when put to the paces in someone’s hands.
+          </p>
         </blockquote>
 
         <p>
-          Timings became super important. Transitions and animations were carefully tweaked until everything felt right. If something felt too slow it would feel like a chore. Too fast and it caused fatigue.
+          Timings became super important. Transitions and animations were carefully tweaked until everything felt right.
         </p>
 
         <p>
-          Through rounds of guerilla testing with users, I was able to rapidly iterate on ideas. New and unexpected solutions uncovered themselves in a way they wouldn’t have if I had stuck to using static mockups.
+          I was able to rapidly iterate on ideas with quick and dirty guerilla testing. Unexpected solutions uncovered themselves in ways they mightn't have from static mockups.
         </p>
       </div>
     </div>

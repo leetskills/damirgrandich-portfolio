@@ -4,11 +4,18 @@
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "bootstrap-tweaks";
 
+$aos-distance: 4rem;
+@import "node_modules/aos/src/sass/aos.scss";
+
+@import "shadows";
 @import "components";
+@import "footer";
 @import "navbar";
 @import "type";
+
 @import "home";
 @import "work";
+@import "about";
 
 .strip-spaces {
   font-size: 0;

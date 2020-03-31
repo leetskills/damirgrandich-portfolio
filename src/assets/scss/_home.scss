@@ -18,14 +18,14 @@
 
 @keyframes rotateClockwise {
   0% { transform: rotate(0deg) scale(1) }
-  50% { transform: rotate(180deg) scale(.5) }
+  50% { opacity: .5; transform: rotate(180deg) scale(.1) }
   100% { transform: rotate(360deg) scale(1) }
 }
 
 @keyframes rotateAnticlockwise {
-  0% { transform: rotate(0deg) scale(1) }
-  50% { transform: rotate(-180deg) scale(2) }
-  100% { transform: rotate(360deg) scale(1) }
+  0% { transform: rotate(0deg) scale((1)) }
+  50% { opacity: .6; transform: rotate(-180deg) scale(2) }
+  100% { transform: rotate(360deg) scale((1)) }
 }
 
 .dg-header {
@@ -62,16 +62,16 @@
     transform-origin: 30% 70%;
   }
 
-  // #group1 { animation-duration: 700s; animation-name: rotateClockwise; }
-  // #group2 { animation-duration: 600s; animation-name: rotateAnticlockwise; }
-  // #group3 { animation-duration: 500s; animation-name: rotateClockwise; }
-  // #group4 { animation-duration: 400s; animation-name: rotateAnticlockwise; }
-  #group5 { animation-duration: 400s; animation-name: rotateClockwise; }
+  // #group1 { animation-duration: 70s; animation-name: rotateClockwise; }
+  // #group2 { animation-duration: 60s; animation-name: rotateAnticlockwise; }
+  // #group3 { animation-duration: 50s; animation-name: rotateClockwise; }
+  // #group4 { animation-duration: 40s; animation-name: rotateAnticlockwise; }
+  #group5 { animation-duration: 500s; animation-name: rotateClockwise; }
   #group6 { animation-duration: 500s; animation-name: rotateAnticlockwise; }
-  #group7 { animation-duration: 500s; animation-name: rotateClockwise; }
-  #group8 { animation-duration: 400s; animation-name: rotateAnticlockwise; }
-  // #group9 { animation-duration: 700s; animation-name: rotateClockwise; }
-  // #group10 { animation-duration: 800s; animation-name: rotateAnticlockwise; }
+  // #group7 { animation-duration: 50s; animation-name: rotateClockwise; }
+  // #group8 { animation-duration: 40s; animation-name: rotateAnticlockwise; }
+  // #group9 { animation-duration: 70s; animation-name: rotateClockwise; }
+  // #group10 { animation-duration: 80s; animation-name: rotateAnticlockwise; }
 
   .dg-header-tagline {
     margin-bottom: 0;
@@ -150,9 +150,6 @@
     @include media-breakpoint-up(sm) {
       @include make-col(6);
     }
-    @include media-breakpoint-up(md) {
-      @include make-col(4);
-    }
   }
 
   .dg-project-link {
@@ -207,8 +204,8 @@
         @include scoota-bg;
       }
 
-      &.dg-project-cnc {
-        @include cnc-bg;
+      &.dg-project-storeboost {
+        @include storeboost-bg;
       }
     }
 

@@ -1,0 +1,27 @@
+@mixin shadow($color: #07f) {
+  box-shadow: 0 .0625rem .25rem 0 rgba($color, .2),
+              0 .25rem 1rem 0 rgba($color, .1);
+}
+
+@mixin shadow-xl($color: #07f) {
+  box-shadow:
+    0 1px 1px rgba($color, 0.05),
+    0 2px 3px rgba($color, 0.05),
+    0 8px 8px rgba($color, 0.05),
+    0 16px 16px rgba($color, 0.05),
+    0 48px 48px rgba($color, 0.1)
+  ;
+}
+
+// @mixin shadow-xl($color: #07f) {
+//   box-shadow: 0 .0625rem .25rem 0 rgba($color, .3),
+//               0 .375rem 4rem 0 rgba($color, .2);
+// }
+
+.dg-shadow {
+  @include shadow;
+}
+
+.dg-shadow-xl {
+  @include shadow-xl;
+}

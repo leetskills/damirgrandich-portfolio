@@ -39,10 +39,10 @@ h6, .h6 {
 
 blockquote {
   color: $carmine;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: -.025em;
-  line-height: 1.5rem;
+  line-height: 2rem;
   padding-left: 3rem;
   padding-right: 3rem;
 
@@ -58,7 +58,7 @@ blockquote {
 @mixin dg-caps-label($color: $carmine, $size: .875rem, $line-height: 1.5rem) {
   color: $color;
   font-size: $size;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.077em;
   line-height: $line-height;
   text-transform: uppercase;

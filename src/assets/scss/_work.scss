@@ -14,14 +14,27 @@
 }
 
 .dg-work-section {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .dg-work-background {
   background-color: $white;
+}
+
+.dg-work-infobox {
+  background-color: lighten($platinum, 10%);
+  border-radius: $border-radius-lg;
+
+  h4 {
+    margin-bottom: .25rem;
+  }
+
+  .dg-work-infobox-value {
+    font-size: $font-size-sm;
+    line-height: 1rem;
+    padding: .25rem 0;
+  }
 }
 
 .dg-work-image {
@@ -33,8 +46,12 @@
 }
 
 .dg-work-phone-image {
-  padding: 7rem 0 0;
+  padding-top: 10rem;
   text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 5rem;
+  }
 
   img {
     max-width: 50rem;
@@ -45,10 +62,10 @@
 
 .dg-work-challenge {
   background-color: $oxford-blue;
-  color: $white;
+  color: $platinum;
 
   h2 {
-    color: $platinum;
+    color: $white;
   }
 
   .dg-caps-label {
@@ -58,6 +75,10 @@
 
 .dg-work-outcome {
   background-color: $silk;
+
+  .lead {
+    color: $carmine;
+  }
 }
 
 // Vow
@@ -76,12 +97,20 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 0;
 }
 
-.dg-work-vow-screenshot {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.dg-work-vow-screenshots {
+  height: 57rem;
+  background-color: $glitter;
+  background-image: url('../images/work/vow/vow-screenshots@2x.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1920px;
+
+  @include media-breakpoint-down(sm) {
+    background-size: cover;
+    height: 32rem;
+  }
 }
 
 
@@ -103,6 +132,38 @@
 }
 
 
+// Store Boost
+
+.dg-work-storeboost-bg {
+  @include storeboost-bg;
+  // background-image: url('../images/work/storeboost/storeboost-header@2x.png');
+  // background-position: center center;
+  // background-size: 1920px;
+
+  img {
+    height: 4rem;
+  }
+}
+
+.dg-work-storeboost {
+  background-color: #16122E;
+}
+
+.dg-work-storeboost-screenshots {
+  height: 48rem;
+  background-color: $glitter;
+  background-image: url('../images/work/storeboost/storeboost-screenshots@2x.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1920px;
+
+  @include media-breakpoint-down(sm) {
+    background-size: cover;
+    height: 28rem;
+  }
+}
+
+
 // Chroma
 
 .dg-work-chroma-bg {
@@ -114,19 +175,5 @@
 }
 
 .dg-work-chroma-screenshot {
-  // background-color: #EDF2FA;
-  // background-color: $platinum;
-  background-color: #fff;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-
-  img {
-    // border-radius: $border-radius-lg;
-    // @include shadow-xl();
-  }
-}
-
-.dg-work-chroma-accessibility {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  background-color: $glitter;
 }

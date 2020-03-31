@@ -5,6 +5,8 @@ permalink: /work/vow/
 bodyClass: project
 ---
 
+{% assign project = site.data.projects[1] %}
+
 <div class="dg-work-header dg-work-vow-bg">
   <div class="container">
     <img
@@ -14,37 +16,39 @@ bodyClass: project
   </div>
 </div>
 
-<div class="dg-work-section dg-work-background">
+<div class="dg-work-section dg-work-background py-4 py-md-7">
   <div class="container">
-    <h3 class="dg-caps-label">
-      Project
-    </h3>
+    {%- include project-infobox.html -%}
 
-    <h1>
-      Vow Made
-    </h1>
+    <div class="row" data-aos="fade-up" data-aos-delay="400">
+      <div class="col-12 col-md-10 offset-md-1">
+        <h3 class="dg-caps-label">
+          Background
+        </h3>
 
-    <p class="lead">
-      Ahead of the curve with in-housing the digital advertising workflow.
-    </p>
+        <h1>
+          In-housing digital advertising
+        </h1>
 
-    <p>
-      Vow is a startup with one main focus - to allow brands to take back control of their digital advertising.
-    </p>
+        <p class="lead">
+          Vow enables brands to take back control of their marketing supply chain.
+        </p>
 
-    <blockquote>
-      <p>
-        No one knows their brand better than the brand managers.
-      </p>
-    </blockquote>
+        <p>
+          Increasingly brands are bringing marketing in-house, and they need new solutions to effectively replace what they have relied upon external agencies to provide for them.
+        </p>
 
-    <p>
-      Media agencies have proven themselves to be unreliable or even untrustworthy with how they handle a brand.
-    </p>
+        <blockquote>
+          <p>
+            No one knows their brand better than their own brand managers.
+          </p>
+        </blockquote>
 
-    <p>
-      Vow was designed from the outset to be easy to use and to just work with whatever your ad tech stack is.
-    </p>
+        <p>
+          Vow was designed to be an easy to use solution that connects all of a customer's ad-tech stack and enables true omni-channel marketing.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -54,79 +58,112 @@ bodyClass: project
           /assets/images/work/vow/vow-hand@2x.png 2x"
     src="/assets/images/work/vow/vow-hand.png"
     alt="Example of a person using Vow on a phone"
-    class="img-fluid w-100">
+    class="img-fluid w-100"
+    data-aos="fade-up">
 </div>
 
-<div class="dg-work-section dg-work-challenge">
-  <div class="container">
-    <h3 class="dg-caps-label">
-      Key Challenge
-    </h3>
-
-    <h2>
-      Lorem ipsum dolor sit amet
-    </h2>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-
-    <p>
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+<div class="dg-work-section dg-work-vow-screenshots">
+  <div class="sr-only">
+    Image collage showing various pages of the of VOW UI on desktop and mobile devices
   </div>
 </div>
 
-<div class="dg-work-image dg-work-vow-screenshot">
+<div class="dg-work-section dg-work-challenge py-5 py-md-7">
+  <div class="container">
+    <div class="row" data-aos="fade-up">
+      <div class="col-12 col-md-10 offset-md-1">
+        <h3 class="dg-caps-label">
+          Challenge
+        </h3>
+
+        <h2>
+          Smashing up the old boys' club
+        </h2>
+
+        <p class="lead">
+          Media industries have evolved over time to do things in their own peculiar ways.
+        </p>
+
+        <p>
+          It is no mean feat to crack open the secretive world of the agencies, and democratise creative and media so that brands can learn to take things into their own hands.
+        </p>
+
+        <p>
+          Vow takes a streamlined, unified approach that takes the best of each and ditches the inefficient, the fraudulent, and the just plain ugly.
+        </p>
+
+        <p>
+          This approach poses a number of challenges: to retain learned behaviours while making precision improvements, all while making it as easy to use as possible.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dg-work-image dg-work-vow-screenshot py-5 py-md-7">
   <div class="container">
     <img
       srcset="/assets/images/work/vow/vow-screenshot.png 1x,
               /assets/images/work/vow/vow-screenshot@2x.png 2x"
       src="/assets/images/work/vow/vow-screenshot@2x.png"
       alt="Screenshot of the Vow UI"
-      class="img-fluid w-100 rounded-lg dg-shadow-xl">
+      class="img-fluid w-100 rounded-lg dg-shadow-xl"
+      data-aos="fade-up">
   </div>
 </div>
 
-<div class="dg-work-section dg-work-outcome">
+<div class="dg-work-section dg-work-outcome py-5 py-md-7">
   <div class="container">
-    <h3 class="dg-caps-label">
-      Outcomes
-    </h3>
+    <div class="row" data-aos="fade-up">
+      <div class="col-12 col-md-10 offset-md-1">
+        <h3 class="dg-caps-label">
+          Takeaways
+        </h3>
 
-    <h2>
-      Lorem ipsum dolor sit amet
-    </h2>
+        <h2>
+          <i>
+            Don't Repeat Yourself
+          </i>
+        </h2>
 
-    <div class="row">
-      <div class="col-sm-6 col-md-5">
-        <img
-          srcset="/assets/images/work/pollpass/pollpass-code.png 1x,
-                  /assets/images/work/pollpass/pollpass-code@2x.png 2x"
-          src="/assets/images/work/pollpass/pollpass-code@2x.png"
-          alt="Screenshot of the prototype code for Pollpass"
-          class="img-fluid w-100">
-      </div>
-
-      <div class="col-sm-6 col-md-7">
         <p>
-          I was able to test all of the various types of questions that would represent a real market research survey, from short snappy questions with just a few choices to longer questions with a long list of items to choose from.
+          <img
+            srcset="/assets/images/work/vow/vow-symbols.png 1x,
+                    /assets/images/work/vow/vow-symbols@2x.png 2x"
+            src="/assets/images/work/vow/vow-symbols@2x.png"
+            alt="Screenshot of the a Sketch symbol from the Vow design kit"
+            class="img-fluid rounded w-100">
         </p>
 
         <p>
-          It also allowed me to see how it felt to spend an extended amount of time answering questions: to see how fatigue might set in, and where to inject some variety as required.
+          For such a massive application in constant flux at the early startup stage, I had to be quite strategic in my approach to the design and prototype build.
         </p>
 
         <blockquote>
-          Ideas that looked fine in a Sketch file were discovered to be suboptimal when put to the paces in someone’s hands.
+          <p>
+            For efficiency, not to mention my own sanity, I stuck to the <abbr title="Don't Repeat Yourself">DRY</abbr> principle.
+          </p>
         </blockquote>
 
         <p>
-          Timings became super important. Transitions and animations were carefully tweaked until everything felt right. If something felt too slow it would feel like a chore. Too fast and it caused fatigue.
+          I used a heavily component-led design incorporating reusable Sketch symbols. This allowed rapid design updates whenever the need arose.
         </p>
 
         <p>
-          Through rounds of guerilla testing with users, I was able to rapidly iterate on ideas. New and unexpected solutions uncovered themselves in a way they wouldn’t have if I had stuck to using static mockups.
+          <img
+            srcset="/assets/images/work/vow/vow-code.png 1x,
+                    /assets/images/work/vow/vow-code@2x.png 2x"
+            src="/assets/images/work/vow/vow-code@2x.png"
+            alt="Screenshot of the prototype code for Vow"
+            class="img-fluid rounded w-100">
+        </p>
+
+        <p>
+          This approach was even more critical in the prototype, where a considerable data structure and reusable code components acted as the foundation behind the huge number of pages.
+        </p>
+
+        <p>
+          The outcome was a beautiful high-fidelity fully clickable prototype that the customer could present to potential partners and investors.
         </p>
       </div>
     </div>

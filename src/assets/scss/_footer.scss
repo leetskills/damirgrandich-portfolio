@@ -1,0 +1,67 @@
+.dg-footer {
+  background-color: $midnight-green;
+  background-image: url('../images/footer-graphic.svg');
+  background-position: 25% 0;
+  background-size: cover;
+  color: $white;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+    padding-top: 3rem;
+
+    .dg-footer-image {
+      margin-bottom: 1rem;
+
+      img {
+        width: 8rem;
+      }
+    }
+  }
+
+  a {
+    color: $sky;
+
+    &:hover,
+    &:focus {
+      color: darken($sky, 15%);
+    }
+  }
+
+  .dg-footer-links {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+
+      a {
+        color: $white;
+        display: block;
+        font-size: 2rem;
+        line-height: 1.0;
+
+        &:hover,
+        &:focus {
+          color: darken($sky, 15%);
+        }
+      }
+    }
+  }
+
+  .dg-copyright {
+    margin-top: 2.5rem;
+  }
+}
